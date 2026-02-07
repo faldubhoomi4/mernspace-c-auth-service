@@ -1,3 +1,7 @@
 # Ignore artifacts:
 dist
+<<<<<<< HEAD
 coverage
+=======
+coverage
+>>>>>>> 44f6f39a923e40cfeb13f53da5c032dc06c35206
