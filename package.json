@@ -1,28 +1,5 @@
 {
-<<<<<<< HEAD
-    "name": "auth-servise",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "dev": "node src/server.js",
-        "format:fix": "prettier . --write",
-        "format:check": "prettier . --check",
-        "lint:fix": "elsint . ",
-        "lint:check": "eslint . --check",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "description": "",
-    "devDependencies": {
-        "@eslint/js": "^9.39.2",
-        "@types/node": "^25.2.1",
-        "eslint": "^9.39.2",
-        "prettier": "3.8.1",
-        "typescript": "^5.9.3",
-        "typescript-eslint": "^8.54.0"
-    }
-=======
+
   "name": "auth-servise",
   "version": "1.0.0",
   "main": "index.js",
@@ -45,5 +22,5 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0"
   }
->>>>>>> 44f6f39a923e40cfeb13f53da5c032dc06c35206
+
 }
