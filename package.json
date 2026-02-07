@@ -2,6 +2,7 @@
   "name": "auth-servise",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "node src/server.js",
     "format:fix": "prettier . --write",
@@ -24,6 +25,7 @@
     "typescript-eslint": "^8.54.0"
   },
   "dependencies": {
+    "dotenv": "^17.2.4",
     "husky": "^9.1.7"
   },
   "lint-staged": {
