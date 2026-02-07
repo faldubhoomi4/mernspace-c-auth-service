@@ -4,6 +4,6 @@ function welcome(name: string) {
   }
  const user = {
     name : "bhoomi"}
-const u1 = user.name
+const U1 = user.name
 welcome("bh");
  

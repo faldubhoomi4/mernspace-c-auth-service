@@ -6,7 +6,7 @@
     "dev": "node src/server.js",
     "format:fix": "prettier . --write",
     "format:check": "prettier . --check",
-     "lint:fix": "elsint . --fix",
+     "lint:fix": "elsint . ",
     "lint:check": "eslint . --check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
