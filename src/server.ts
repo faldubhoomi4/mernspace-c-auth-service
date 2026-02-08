@@ -1,11 +1,14 @@
 import app from './app.js';
 import './config/index.js';
+import logger from './config/logger.js';
 
 const sraetserver = () => {
   const PORT = process.env.PORT;
   try {
     app.listen(PORT, () => {
-      console.log(`Listen ON PORT ${PORT}`);
+      logger.error('testing Error...');
+
+      logger.info('listing port', { port: PORT });
     });
   } catch (err) {
     console.error(err);
