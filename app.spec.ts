@@ -2,10 +2,9 @@ import { describe, it, expect } from 'vitest';
 import { calculateDiscount } from './src/utils.js';
 import request from 'supertest';
 import app from './src/app.js';
- 
 
-describe.skip ('calculateDiscount', () => {
-  it('should return correct discount amount', () => {s
+describe.skip('calculateDiscount', () => {
+  it('should return correct discount amount', () => {
     const discount = calculateDiscount(100, 10);
     expect(discount).toBe(10);
   });

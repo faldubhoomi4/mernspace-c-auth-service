@@ -16,4 +16,3 @@ const sraetserver = () => {
 };
 
 sraetserver();
-
