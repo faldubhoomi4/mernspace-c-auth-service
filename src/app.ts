@@ -6,11 +6,16 @@ import express, {
 import logger from './config/logger.js';
 const app = express();
 import { type HttpError } from 'http-errors';
+import authRouther from "./routes/auth.js"
+
 
 app.get('', (req, res) => {
-  res.status(200).send('Welcome to the page ');
+  res.send('Welcome to the page');
 });
 
+app.use("/auth", authRouther
+
+)
 //global error handle
 app.use(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

@@ -3,12 +3,11 @@ import './config/index.js';
 import logger from './config/logger.js';
 
 const sraetserver = () => {
-  const PORT = process.env.PORT;
+  const PORT = process.env.PORT || 5004;
   try {
     app.listen(PORT, () => {
       logger.error('testing Error...');
-
-      logger.info('listing port', { port: PORT });
+      logger.info(`listing port ${PORT}`);
     });
   } catch (err) {
     console.error(err);
@@ -17,3 +16,4 @@ const sraetserver = () => {
 };
 
 sraetserver();
+
