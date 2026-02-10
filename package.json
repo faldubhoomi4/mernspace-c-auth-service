@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc, context: .",
     "start": "node dist/server.js",
-    "dev": "nodemon --watch src --ext ts --exec node --loader ts-node/esm src/server.ts",
+    "dev": "cross-env NODE_ENV=dev nodemon --watch src --ext ts --exec node --loader ts-node/esm src/server.ts",
     "format:fix": "prettier . --write",
     "format:check": "prettier . --check",
     "lint:fix": "eslint . --fix",
@@ -32,6 +32,7 @@
     "prettier": "3.8.1",
     "supertest": "^7.2.2",
     "ts-node": "^10.9.2",
+    "typeorm-ts-node-esm": "^0.3.20",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0",
     "vitest": "^4.0.18"
@@ -41,6 +42,8 @@
     "express": "^5.2.1",
     "http-errors": "^2.0.1",
     "husky": "^9.1.7",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.28",
     "winston": "^3.19.0"
   },
   "lint-staged": {
